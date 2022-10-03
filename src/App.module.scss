@@ -1,0 +1,68 @@
+.App {
+  width: 100%;
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .ToDo {
+    width: 658px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      margin: 72px 0 24px 0;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000000;
+    }
+
+    .ToDoList {
+      margin-bottom: 30px;
+    }
+
+    .Divider {
+
+    }
+
+    .Input {
+      margin-top: 30px;
+    }
+
+    .Button {
+      margin-top: 16px;
+      width: 344px;
+      height: 48px;
+      background-color: #FAFAFC;
+      border: 1px solid #C4CAD5;
+      border-radius: 15px;
+      cursor: pointer;
+
+        &:hover {
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+        }
+
+      span {
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FC5F5F;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    .ToDo {
+      width: 100%;
+    }
+  }
+}
+
